@@ -1,5 +1,442 @@
 [
   {
+    "source_file": "2015-10-19 CAT Global Inc Rate Confirmation - Sobeys.pdf",
+    "date": "2015-10-19",
+    "customer": null,
+    "equipment": "Reefer",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Milwaukee, WI",
+        "destination": "Terrebonne, QC",
+        "miles": null,
+        "mode": null,
+        "flat": 3085.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Milwaukee, WI",
+        "destination": "Montreal-Nord, QC",
+        "miles": null,
+        "mode": null,
+        "flat": 3000.0,
+        "fund_type": "CAD"
+      }
+    ],
+    "notes": "Surcharge de carburant extra (14% pour la semaine du 10/12/2015)"
+  },
+  {
+    "source_file": "2016-03-31 CAT Inc Rate Confirmation Farel.pdf",
+    "date": "2016-03-31",
+    "customer": "Farel",
+    "equipment": "Dry Van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Montreal, QC",
+        "destination": "Cuautitlan, EM",
+        "miles": 2211,
+        "mode": null,
+        "flat": 4275.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Fuel Surcharge extra as per chart (0.17$/mi for the week of 3/28/16) Fuel surcharge calculated from Origin to Laredo, TX Border Crossing extra (110$) T&E Bond extra (125$)"
+  },
+  {
+    "source_file": "2016-09-23 CAT Inc Rate Confirmation Macco Organiques Inc.pdf",
+    "date": "2016-09-23",
+    "customer": null,
+    "equipment": ":",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Bolingbrook, IL",
+        "miles": null,
+        "mode": null,
+        "flat": 1550.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Budd Lake, NJ",
+        "miles": null,
+        "mode": null,
+        "flat": 1150.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Carrollton , TX",
+        "miles": null,
+        "mode": null,
+        "flat": 3125.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Chambersburg, PA",
+        "miles": null,
+        "mode": null,
+        "flat": 1350.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Columbus, GA",
+        "miles": null,
+        "mode": null,
+        "flat": 2150.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Dallas , TX",
+        "miles": null,
+        "mode": null,
+        "flat": 3125.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Davenport, IA",
+        "miles": null,
+        "mode": null,
+        "flat": 2150.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Dayton, OH",
+        "miles": null,
+        "mode": null,
+        "flat": 1450.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Downsview, ON",
+        "miles": null,
+        "mode": null,
+        "flat": 700.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Dunn, NC",
+        "miles": null,
+        "mode": null,
+        "flat": 1625.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Edinburg, TX",
+        "miles": null,
+        "mode": null,
+        "flat": 3855.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Florence, KY",
+        "miles": null,
+        "mode": null,
+        "flat": 1625.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Fontana, CA",
+        "miles": null,
+        "mode": null,
+        "flat": 3850.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Glendale, NY",
+        "miles": null,
+        "mode": null,
+        "flat": 1125.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Grand Prairie , TX",
+        "miles": null,
+        "mode": null,
+        "flat": 3150.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Greenville, TX",
+        "miles": null,
+        "mode": null,
+        "flat": 3150.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Hammond, IN",
+        "miles": null,
+        "mode": null,
+        "flat": 1550.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Houston, TX",
+        "miles": null,
+        "mode": null,
+        "flat": 3425.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Kingsport, TN",
+        "miles": null,
+        "mode": null,
+        "flat": 1995.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Laredo, TX",
+        "miles": null,
+        "mode": null,
+        "flat": 3685.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Lithia Springs, GA",
+        "miles": null,
+        "mode": null,
+        "flat": 2100.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "London , ON",
+        "miles": null,
+        "mode": null,
+        "flat": 825.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Madison, WI",
+        "miles": null,
+        "mode": null,
+        "flat": 1800.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "McDonough, GA",
+        "miles": null,
+        "mode": null,
+        "flat": 2100.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Memphis , TN",
+        "miles": null,
+        "mode": null,
+        "flat": 2000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Mexico City, MX",
+        "miles": null,
+        "mode": null,
+        "flat": 5600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Morrisville, PA",
+        "miles": null,
+        "mode": null,
+        "flat": 1100.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Mt. Pleasant, TX",
+        "miles": null,
+        "mode": null,
+        "flat": 2995.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Napoles, MX",
+        "miles": null,
+        "mode": null,
+        "flat": 5600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Newberry, SC",
+        "miles": null,
+        "mode": null,
+        "flat": 1900.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "North Hollywood, CA",
+        "miles": 3565,
+        "mode": null,
+        "flat": 3850.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Polo, IL",
+        "miles": null,
+        "mode": null,
+        "flat": 1650.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Putnam , ON",
+        "miles": null,
+        "mode": null,
+        "flat": 800.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Redlands, CA",
+        "miles": null,
+        "mode": null,
+        "flat": 3850.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Roanoke, VA",
+        "miles": null,
+        "mode": null,
+        "flat": 1575.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Rockford, IL",
+        "miles": null,
+        "mode": null,
+        "flat": 1600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "San Antonio , TX",
+        "miles": null,
+        "mode": null,
+        "flat": 3600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "San Diego, CA",
+        "miles": 3885,
+        "mode": null,
+        "flat": 3850.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Tillsonburg, ON",
+        "miles": null,
+        "mode": null,
+        "flat": 825.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Tuttle, OK",
+        "miles": null,
+        "mode": null,
+        "flat": 2795.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Woodridge, IL",
+        "miles": null,
+        "mode": null,
+        "flat": 1500.0,
+        "fund_type": "CAD"
+      }
+    ],
+    "notes": "Surcharge de carburant incluse. Border Crossing, T&E Bond Inclus"
+  },
+  {
+    "source_file": "2017-09-25 CAT Inc Rate Confirmation - Rustic Furniture.pdf",
+    "date": null,
+    "customer": "Rustic Furniture Outlet",
+    "equipment": "Intermodal",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Puebla, MX",
+        "destination": "Coteau-du-Lac, QC",
+        "miles": null,
+        "mode": null,
+        "flat": 3430.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Surcharge de carburant extra (22,5 % as of 09/18/17). The diesel fuel cost rate sshown on the schedule beloww will be used to determine the fuel surchaarge applicablee to the line haul rates chargeed by C.A.T. Global, Inc. The ffuel surcharge matrix is baseed on the Depaartment of Eneergy (DOE) National Average pprice of fuel ass reported eachh Monday and will be used as the basis of ccalculation. The index is available at the ffollowing link hhttp://www.eiaa.gov/petroleuum/gasdiesel/or can be veriffied by calling tthe Energy Infoormation Fuel Hotline at (2022) 586‐6966. Revisions tto this fuel surccharge will be made the day after the DOE posts its weekkly fuel index. FFractions will bbe rounded up to the nearest whole cent. DOE Averaage Percent Fuel DOE Averrage Percent Fuel DOE Average Percent Fuel DOE Avverage Percennt Fuel Price/Gallon Surcharge Price/Gallon Surchargge Price/Gallon Surcharge Price/Gallon Surchharge 0.000 ‐ 1.0059 0% 2.340 ‐ 22.379 17.00%% 3.660 ‐ 3.699 33.500% 4.980 ‐ 5.019 50.000% 1.060 ‐ 1.0099 1.0% 2.380 ‐ 22.459 17.50%% 3.700 ‐ 3.739 34.000% 5.020 ‐ 5.059 50.550% 1.100 ‐ 1.139 1.5% 2.420 ‐ 22.459 18.00%% 3.740 ‐ 3.779 34.500% 5.060 ‐ 5.099 51.000% 1.140 ‐ 1.179 2.0% 2.460 ‐ 22.499 18.50%% 3.780 ‐ 3.819 35.000% 5.100 ‐ 5.139 51.550% 1.180 ‐ 1.219 2.5% 2.500 ‐ 22.539 19.00%% 3.820 ‐ 3.859 35.500% 5.140 ‐ 5.179 52.000% 1.220 ‐ 1.259 3.0% 2.540 ‐ 22.579 19.50%% 3.860 ‐ 3.899 36.000% 5.180 ‐ 5.219 52.550% 1.260 ‐ 1.299 3.5% 2.580 ‐ 22.619 20.00%% 3.900 ‐ 3.939 36.500% 5.220 ‐ 5.259 53.000% 1.300 ‐ 1.339 4.0% 2.620 ‐ 22.659 20.50%% 3.940 ‐ 3.979 37.000% 5.260 ‐ 5.299 53.550% 1.340 ‐ 1.379 4.5% 2.660 ‐ 22.699 21.00%% 3.980 ‐ 4.019 37.500% 5.300 ‐ 5.339 54.000% 1.380 ‐ 1.4419 5.0% 2.700 ‐ 22.739 21.50%% 4.020 ‐ 4.059 38.000% 5.340 ‐ 5.379 54.550% 1.420 ‐ 1.4459 5.5% 2.740 ‐ 22.779 22.00%% 4.060 ‐ 4.099 38.500% 5.380 ‐ 5.419 55.000% 1.460 ‐ 1.4499 6.0% 2.780 ‐ 22.819 22.50%% 4.100 ‐ 4.139 39.000% 5.420 ‐ 5.459 55.550% 1.500 ‐ 1.539 6.5% 2.820 ‐ 22.859 23.00%% 4.140 ‐ 4.179 39.500% 5.460 ‐ 5.499 56.000% 1.540 ‐ 1.579 7.0% 2.860 ‐ 22.899 23.50%% 4.180 ‐ 4.219 40.000% 5.500 ‐ 5.539 56.550% 1.580 ‐ 1.619 7.5% 2.900 ‐ 22.939 24.00%% 4.220 ‐ 4.259 40.500% 5.540 ‐ 5.579 57.000% 1.620 ‐ 1.659 8.0% 2.940 ‐ 22.979 24.50%% 4.260 ‐ 4.299 41.000% 5.580 ‐ 5.619 57.550% 1.660 ‐ 1.699 8.5% 2.980 ‐ 33.019 25.00%% 4.300 ‐ 4.339 41.500% 5.620 ‐ 5.659 58.000% 1.700 ‐ 1.739 9.0% 3.020 ‐ 33.059 25.50%% 4.340 ‐ 4.379 42.000% 5.660 ‐ 5.699 58.550% 1.740 ‐ 1.779 9.5% 3.060 ‐ 33.099 26.00%% 4.380 ‐ 4.419 42.500% 5.700 ‐ 5.739 59.000% 1.780 ‐ 1.819 10.0% 3.100 ‐ 33.139 26.50%% 4.420 ‐ 4.459 43.000% 5.740 ‐ 5.779 59.550% 1.820 ‐ 1.859 10.5% 3.140 ‐ 33.179 27.00%% 4.460 ‐ 4.499 43.500% 5.780 ‐ 5.819 60.000% 1.860 ‐ 1.899 11.0% 3.180 ‐ 33.219 27.50%% 4.500 ‐ 4.539 44.000% 5.820 ‐ 5.859 60.550% 1.900 ‐ 1.939 11.5% 3.220 ‐ 33.259 28.00%% 4.540 ‐ 4.579 44.500% 5.860 ‐ 5.899 61.000% 1.940 ‐ 1.979 12.0% 3.260 ‐ 33.299 28.50%% 4.580 ‐ 4.619 45.000% 5.900 ‐ 5.939 61.550% 1.980 ‐ 2.0019 12.5% 3.300 ‐ 33.339 29.00%% 4.620 ‐ 4.659 45.500% 5.940 ‐ 5.979 62.000% 2.020 ‐ 2.0059 13.0% 3.340 ‐ 33.379 29.50%% 4.660 ‐ 4.699 46.000% 5.980 ‐ 6.019 62.550% 2.060 ‐ 2.0099 13.5% 3.380 ‐ 33.419 30.00%% 4.700 ‐ 4.739 46.500% 6.020 ‐ 6.059 63.000% 2.100 ‐ 2.139 14.0% 3.420 ‐ 33.459 30.50%% 4.740 ‐ 4.779 47.000% 6.060 ‐ 6.099 63.550% 2.140 ‐ 2.179 14.5% 3.460 ‐ 33.499 31.00%% 4.780 ‐ 4.819 47.500% 6.100 ‐ 6.139 64.000% 2.180 ‐ 2.219 15.0% 3.500 ‐ 33.539 31.50%% 4.820 ‐ 4.859 48.000% 6.140 ‐ 6.179 64.550% 2.220 ‐ 2.259 15.5% 3.540 ‐ 33.579 32.00%% 4.860 ‐ 4.899 48.500% 6.180 ‐ 6.219 65.000% 2.260 ‐ 2.299 16.0% 3.580 ‐ 33.619 32.50%% 4.900 ‐ 4.939 49.000% 6.220 ‐ 6.259 65.550% 2.300 ‐ 2.339 16.5% 3.620 ‐ 33.659 33.00%% 4.940 ‐ 4.979 49.500% 6.260 ‐ 6.299 66.000% The Fuel Suurcharge will ccontinue to increase by 0.5% increments foor every $0.04 pper gallon incrrease of the cost of diesel fuel should it exceed the table abbove. Effecctive 2015/011/26 Charrge Type Free TTime Allowedd Charge pper unit Bobttail No Free Time $100 Minnimum, or a ccharge of $1.75 per mile frrom the correspoonding ramp wwill apply Bondded N/A Moving uunder \"In Bonnd\" conditionns $200 per shhipment plus any applicable suufferance warrehouse chargges Container/Chassiss Split fee N/A $85 per uunit, is assesssed whenever the pick up or terminattion of a container or chassis is destinedd to a location other than thhe original shipment pick uup or delivery location Driveer Detention (Live 2 hours $70 per hhour unless ggreater than 55 hours whichh will result load//Unload) in a full oovernight layoover charge Driveer Detention (Drop Facilityy) 30 Minnutes $70 per hhour unless ggreater than 55 hours whichh will result in a full oovernight layoover charge Deteention (Equipmment) at Shippper Day of Drop/Notify After freee time expirees: Day 1‐3 $335 per day, Daays 4‐7 $65 or Coonsignee Facility plus 2 days, 1st per day, Days 8 plus aat $150 per daay weekend free Diverrsion/Consignnment/Vehiclle N/A $150 minnimum per occcurrence, prrice to be deteermined at order not used orr Dry run time of ooccurrence Driveer Count No Free Time $75 per hhour Driveer Load or Unload No Free Time $100 Minnimum, pricee to be determmined in advaance with Customeer. Stopping inn transit for ppartial unloadding $80 per stop Dunnnage Removal/Cleaning No Free Time $100 minnimum, addittional fees maay be assesseed for other services such as washhouts, disposaal, steam cleaaning, reefer seervices and duunnage transportation to aanother location Freezze protectionn N/A $200 perr occurrence additional nigghts at $50 peer night Hazaardous Materials charge N/A $250 perr shipment foor commoditiees requiring pplacards or (placcarded) describedd as hazardouus by the DOTT and/or Assoociation of Americann Railroads Layover More tthan 5 hours Overnighht $750, over the weekendd $1500 of deteention or custommer request Lumpper No Free Time $25 admmin fee plus lumper actual costs Overrweight N/A $80 additional chargee if the customer has an onsite scale that was utilized to veerify the load was legal, In addition to the claaims related pass through vendor costss to rework the loadss Overrweight Permit/Liquor Fee N/A $25 plus the Cost per permit Railrooad Terminall Ramp storagge Day of Notification After freee time expirees: Day 1‐3 $1100 per day, DDays 4‐11 plus 1 ffree day $150 perr day, Days 8 plus at $300 per day Redeelivery N/A $150 perr occurrence plus $1.75 for all out of rooute miles Scalee No Free Time If custommer requires tthe shipment to be scaled and does not offerr onsite scalinng then there will be an addditional charge asssessed of $440 per occurreence. If scale is greater than 20 mmiles out of rroute an additional chargee of $1.75 per mile will occur onn all out of rouute miles. Cosst of the scale tickket is includedd in this serviice. Shipmment Cancellaation N/A Shipmennts are subject to a $75 feee for all canceellations with lesss than 24 hours’ notice, Drry run and appplicable line haul charges mayy apply if the sshipment hass already been disppatched or thhe empty equuipment has bbeen dropped for loading Stop Off Charge N/A $100 1st stop, $150 22nd stop, $2000 3rd stop. Alll out of route miles are $1.75 per mile Tarping N/A $100 perr occurrence requiring placcement or removal of a tarp on oor off the shippment Yard Pull N/A $100 minnimum or $1..75 per mile wwhichever is ggreater"
+  },
+  {
+    "source_file": "2019-12-07 Goodyear Terrell TX-Laredo TX Confirmation.pdf",
+    "date": "2019-12-07",
+    "customer": "Goodyear",
+    "equipment": "Dry Van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Terrell, TX",
+        "destination": "Laredo, TX",
+        "miles": 444,
+        "mode": null,
+        "flat": 1012.32,
+        "fund_type": "USD",
+        "rpm": 2.0
+      }
+    ],
+    "notes": "Fuel Surcharge extra (Breakthrough fuel) Rate does not include 438 DH miles from Laredo to Beaumont for original pickup location (extra $2.28/mi)"
+  },
+  {
+    "source_file": "2020-10-08 Rona Appliances (XPO) Calgary AB-Richmond BC LTL Confirmation.pdf",
+    "date": "2020-10-08",
+    "customer": "Rona Appliances",
+    "equipment": "Less-than-Truckload (LTL)",
+    "service_type": null,
+    "lanes": [],
+    "notes": "Fuel surcharge extra as per chart (9.9% as of 10/08/20). Rates are based on live loading and live unloading with 1/2-hr free load time at origin, 1/2-hr free unload time at destination. Maximum weight per skid - 1800 lbs Based on standard skid dimensions - 4' x 4' x 4'"
+  },
+  {
+    "source_file": "2021-01-01 Rate confirmation Shunting from Valleyfield 2021.pdf",
+    "date": "2021-01-01",
+    "customer": "Goodyear",
+    "equipment": ":",
+    "service_type": null,
+    "lanes": [],
+    "notes": "Dedicated service: 1 tractor Minimum service: from Monday to Thursday -10 hours from Friday to Sunday -8 hours *Fuel surcharge included"
+  },
+  {
     "source_file": "2021-08-10 Welton Group.pdf",
     "date": "2021-08-10",
     "customer": "Welton Group",
@@ -56,6 +493,15 @@
       }
     ],
     "notes": "Fuel Surchargeextra (this week at $0.39/mile) escort extra fee : an additional 110 $ will be charged if a escort is required at the port"
+  },
+  {
+    "source_file": "2022-01-24 Rate Confirmation Monthly trailer detention for Woodstock.pdf",
+    "date": null,
+    "customer": "Toyota",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [],
+    "notes": "(To be implemented from November 1, 2021)"
   },
   {
     "source_file": "2022-03-21 Associated Materials.pdf",
@@ -610,6 +1056,140 @@
       }
     ],
     "notes": "Fuel Surcharge extra(52.06% as of 2022/05/04)"
+  },
+  {
+    "source_file": "2023-01-18 Westlake Calgary AB-MB FB.pdf",
+    "date": "2023-01-18",
+    "customer": "Westlake",
+    "equipment": "53' Van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Calgary, AB",
+        "destination": "Rosser, MB",
+        "miles": 7,
+        "mode": "FB",
+        "flat": 2200.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Calgary, AB",
+        "destination": "Selkirk, MB",
+        "miles": 8,
+        "mode": "FB",
+        "flat": 2200.0,
+        "fund_type": "CAD"
+      }
+    ],
+    "notes": "Fuel surcharge extra ($0.782/mile as of 01/18/2023). Rate is based on Flatbed service"
+  },
+  {
+    "source_file": "2023-09-11 Bridgestone Tillsonburg ON-Brampton ON.pdf",
+    "date": "2023-09-11",
+    "customer": "Bridgestone Americas Inc.",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "TILLSONBURG, ON",
+        "destination": "BRAMPTON, ON",
+        "miles": 96,
+        "mode": null,
+        "flat": 495.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Fuel surchargeextra (Breakthrough fuel) Fuel to be invoiced on all miles"
+  },
+  {
+    "source_file": "2024-01-29 rate confirmation Mabe #2.pdf",
+    "date": "2024-01-29",
+    "customer": "Mabe",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Brantford,ON",
+        "destination": "Quebec,QC",
+        "miles": 560,
+        "mode": null,
+        "flat": 1015.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "Saguenay,QC",
+        "miles": 685,
+        "mode": null,
+        "flat": 1295.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "Sherbrooke,QC",
+        "miles": 488,
+        "mode": null,
+        "flat": 950.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "Paradise,NL",
+        "miles": 1928,
+        "mode": null,
+        "flat": 6750.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "Ste Croix,QC",
+        "miles": 533,
+        "mode": null,
+        "flat": 1015.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "St Zotique,QC",
+        "miles": 359,
+        "mode": null,
+        "flat": 700.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "Summerside,PE",
+        "miles": 1095,
+        "mode": null,
+        "flat": 2325.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "Sydney,NS",
+        "miles": 1298,
+        "mode": null,
+        "flat": 2950.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "Varennes,QC",
+        "miles": 417,
+        "mode": null,
+        "flat": 750.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brantford,ON",
+        "destination": "Victoriaville,QC",
+        "miles": 500,
+        "mode": null,
+        "flat": 950.0,
+        "fund_type": "CAD"
+      }
+    ],
+    "notes": "Accessorial charges extra per agreement Out of route miles for stops outside to origin and destination to be invoiced at $70 per stop plus lane RPM for extra mileage"
   },
   {
     "source_file": "2024-03-18 Zinc International.pdf",

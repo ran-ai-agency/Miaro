@@ -94,7 +94,7 @@ def json_to_excel(json_path: str, excel_path: str):
 def main():
     script_dir = Path(__file__).parent.parent
     json_path = script_dir / "rate_confirmations.json"
-    excel_path = script_dir / "rate_confirmations.xlsx"
+    excel_path = script_dir / "rate_confirmations_new.xlsx"
 
     if not json_path.exists():
         print(f"JSON file not found: {json_path}")

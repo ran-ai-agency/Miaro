@@ -1,0 +1,20 @@
+[
+  {
+    "source_file": "2021-01-01 Rate confirmation Shunting from Valleyfield 2021.pdf",
+    "date": "2021-01-01",
+    "customer": "Goodyear",
+    "equipment": ":",
+    "service_type": null,
+    "doc_type": "Shunting",
+    "notes": "Dedicated service: 1 tractor Minimum service: from Monday to Thursday -10 hours from Friday to Sunday -8 hours *Fuel surcharge included",
+    "services": [
+      {
+        "description": "Shunting service - Salaberry-de-Valleyfield's plant dedicated service",
+        "location": "Salaberry-de-Valleyfield",
+        "rate_type": "hourly",
+        "rate": 62.5,
+        "fund_type": "CAD"
+      }
+    ]
+  }
+]

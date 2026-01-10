@@ -1,0 +1,85 @@
+[
+  {
+    "source_file": "2020-10-08 Rona Appliances (XPO) Calgary AB-Richmond BC LTL Confirmation.pdf",
+    "date": "2020-10-08",
+    "customer": "Rona Appliances",
+    "equipment": "Less-than-Truckload (LTL)",
+    "service_type": null,
+    "doc_type": "LTL",
+    "notes": "Fuel surcharge extra as per chart (9.9% as of 10/08/20). Rates are based on live loading and live unloading with 1/2-hr free load time at origin, 1/2-hr free unload time at destination. Maximum weight per skid - 1800 lbs Based on standard skid dimensions - 4' x 4' x 4'",
+    "origin": "Calgary, AB",
+    "destination": "Richmond BC",
+    "rates": [
+      {
+        "skids": "1",
+        "rate": 250.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "2",
+        "rate": 345.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "3",
+        "rate": 435.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "4",
+        "rate": 525.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "5",
+        "rate": 615.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "6",
+        "rate": 705.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "7",
+        "rate": 795.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "8",
+        "rate": 890.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "9",
+        "rate": 980.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "10",
+        "rate": 1070.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "11",
+        "rate": 1160.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "12",
+        "rate": 1250.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "13",
+        "rate": 1345.0,
+        "fund_type": "CAD"
+      },
+      {
+        "skids": "14-26",
+        "rate": 1410.0,
+        "fund_type": "CAD"
+      }
+    ]
+  }
+]

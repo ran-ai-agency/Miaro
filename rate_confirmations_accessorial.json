@@ -1,0 +1,19 @@
+[
+  {
+    "source_file": "2022-01-24 Rate Confirmation Monthly trailer detention for Woodstock.pdf",
+    "date": "2022-01-24",
+    "customer": "Toyota",
+    "equipment": "Dry van",
+    "service_type": null,
+    "doc_type": "Accessorial",
+    "notes": "(To be implemented from November 1, 2021)",
+    "charges": [
+      {
+        "description": "WOODSTOCK TRAILER DETENTION",
+        "period": "monthly",
+        "rate": 550.0,
+        "fund_type": "CAD"
+      }
+    ]
+  }
+]

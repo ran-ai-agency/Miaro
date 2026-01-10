@@ -1,0 +1,32 @@
+# Temporary files
+.tmp/
+~$*
+*.tmp
+
+# Claude Code local files
+.claude/
+
+# PDF source files (too large, not code)
+*.pdf
+
+# Excel template
+5. Rate Confirmation Template.xlsx
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1020 @@
+[
+  {
+    "source_file": "2021-08-10 Welton Group.pdf",
+    "date": "2021-08-10",
+    "customer": "Welton Group",
+    "equipment": "Dry van/Reefer",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Wilmington, DE",
+        "destination": "Farnham, QC",
+        "miles": 486,
+        "mode": "DRY",
+        "flat": 1220.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Wilmington, DE",
+        "destination": "Peterborough, ON",
+        "miles": 519,
+        "mode": "DRY",
+        "flat": 1235.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Wilmington, DE",
+        "destination": "Farnham, QC",
+        "miles": 486,
+        "mode": "REEFER",
+        "flat": 1370.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Wilmington, DE",
+        "destination": "Peterborough, ON",
+        "miles": 519,
+        "mode": "REEFER",
+        "flat": 1445.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Wilmington, DE",
+        "destination": "Farnham, QC",
+        "miles": 486,
+        "mode": "FLATBED",
+        "flat": 1370.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Wilmington, DE",
+        "destination": "Peterborough, ON",
+        "miles": 519,
+        "mode": "FLATBED",
+        "flat": 1355.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Fuel Surchargeextra (this week at $0.39/mile) escort extra fee : an additional 110 $ will be charged if a escort is required at the port"
+  },
+  {
+    "source_file": "2022-03-21 Associated Materials.pdf",
+    "date": "2022-03-21",
+    "customer": "Associated Materials",
+    "equipment": "Dry van",
+    "service_type": "Multi-stop lane",
+    "lanes": [
+      {
+        "origin": "Fife, WA",
+        "destination": "Calgary, AB",
+        "miles": 704,
+        "mode": null,
+        "flat": 1900.0,
+        "fund_type": "USD",
+        "rpm": 2.0
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Edmonton, AB",
+        "miles": 819,
+        "mode": null,
+        "flat": 2210.0,
+        "fund_type": "USD",
+        "rpm": 2.0
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Winnipeg, MB",
+        "miles": 1406,
+        "mode": null,
+        "flat": 3445.0,
+        "fund_type": "USD",
+        "rpm": 2.0
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Saskatoon, SK",
+        "miles": 1142,
+        "mode": null,
+        "flat": 2850.0,
+        "fund_type": "USD",
+        "rpm": 2.0
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Red Deer, AB",
+        "miles": 789,
+        "mode": null,
+        "flat": 2130.0,
+        "fund_type": "USD",
+        "rpm": 2.0
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Regina, SK",
+        "miles": 1053,
+        "mode": null,
+        "flat": 2580.0,
+        "fund_type": "USD",
+        "rpm": 2.0
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Nanaimo, BC",
+        "miles": 224,
+        "mode": null,
+        "flat": 2450.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Kelowna, BC",
+        "miles": 345,
+        "mode": null,
+        "flat": 2595.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Surrey, BC",
+        "miles": 154,
+        "mode": null,
+        "flat": 1145.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Fife, WA",
+        "destination": "Chilliwack, BC",
+        "miles": 164,
+        "mode": null,
+        "flat": 1445.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Fuel Surcharge extra($ 0.69/mi as of week of 03/14/2022). 1ststop: $ 75 2ndstop: $ 100 3rdand following stop: $ 125"
+  },
+  {
+    "source_file": "2022-05-04 Cascades.pdf",
+    "date": "2022-05-04",
+    "customer": "Cascades",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Ottawa, ON",
+        "destination": "Trenton, ON",
+        "miles": 179,
+        "mode": null,
+        "flat": 875.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Ottawa, ON",
+        "destination": "Mississauga, ON",
+        "miles": 291,
+        "mode": null,
+        "flat": 955.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "London, ON",
+        "miles": 423,
+        "mode": null,
+        "flat": 1300.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Amherst, NS",
+        "miles": 686,
+        "mode": null,
+        "flat": 2300.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Candiac, QC",
+        "destination": "Wagram, NC",
+        "miles": 930,
+        "mode": null,
+        "flat": 1875.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Candiac, QC",
+        "destination": "Varennes, QC",
+        "miles": 23,
+        "mode": null,
+        "flat": 500.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Candiac, QC",
+        "destination": "Markham, ON",
+        "miles": 329,
+        "mode": null,
+        "flat": 1100.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Candiac, QC",
+        "destination": "Burlington, ON",
+        "miles": 378,
+        "mode": null,
+        "flat": 1100.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Lachute, QC",
+        "destination": "Wagram, NC",
+        "miles": 976,
+        "mode": null,
+        "flat": 2025.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Lachute, QC",
+        "destination": "La Crosse, WI",
+        "miles": 1132,
+        "mode": null,
+        "flat": 4000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Lachute, QC",
+        "destination": "Rockville, MD",
+        "miles": 624,
+        "mode": null,
+        "flat": 2675.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Lachute, QC",
+        "destination": "Mount Joy, PA",
+        "miles": 510,
+        "mode": null,
+        "flat": 2615.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Brampton, ON",
+        "miles": 462,
+        "mode": null,
+        "flat": 1000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Markham, ON",
+        "miles": 434,
+        "mode": null,
+        "flat": 1000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Woodbridge, ON",
+        "miles": 453,
+        "mode": null,
+        "flat": 1000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Scarborough, ON",
+        "miles": 431,
+        "mode": null,
+        "flat": 1000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Waterloo, ON",
+        "miles": 504,
+        "mode": null,
+        "flat": 1050.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "North York, ON",
+        "miles": 440,
+        "mode": null,
+        "flat": 1000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Bedford, PA",
+        "miles": 670,
+        "mode": null,
+        "flat": 2675.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Sturtevant, WI",
+        "miles": 1033,
+        "mode": null,
+        "flat": 3000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Amherst, NS",
+        "miles": 585,
+        "mode": null,
+        "flat": 2600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Kingsey Falls, QC",
+        "destination": "Wagram, NC",
+        "miles": 1029,
+        "mode": null,
+        "flat": 3515.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Drummondville, QC",
+        "destination": "Boisbriand, QC",
+        "miles": 83,
+        "mode": null,
+        "flat": 600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Drummondville, QC",
+        "destination": "Burlington, WI",
+        "miles": 1000,
+        "mode": null,
+        "flat": 4175.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Drummondville, QC",
+        "destination": "Wagram, NC",
+        "miles": 996,
+        "mode": null,
+        "flat": 3250.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Drummondville, QC",
+        "destination": "Dartmouth, NS",
+        "miles": 708,
+        "mode": null,
+        "flat": 2600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Lachine, QC",
+        "destination": "Mississauga, ON",
+        "miles": 339,
+        "mode": null,
+        "flat": 900.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Montreal, QC",
+        "destination": "Mississauga, ON",
+        "miles": 350,
+        "mode": null,
+        "flat": 900.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Montreal, QC",
+        "destination": "Holland Landing, ON",
+        "miles": 355,
+        "mode": null,
+        "flat": 1150.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Montreal, QC",
+        "destination": "Port Hope, ON",
+        "miles": 274,
+        "mode": null,
+        "flat": 998.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Montreal, QC",
+        "destination": "London, ON",
+        "miles": 449,
+        "mode": null,
+        "flat": 1300.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Montreal, QC",
+        "destination": "London, ON",
+        "miles": 449,
+        "mode": null,
+        "flat": 1485.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Montreal, QC",
+        "destination": "Dartmouth, NS",
+        "miles": 768,
+        "mode": null,
+        "flat": 2300.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Montreal, QC",
+        "destination": "Wagram, NC",
+        "miles": 944,
+        "mode": null,
+        "flat": 1895.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "St-Cesaire, QC",
+        "destination": "Golden, CO",
+        "miles": 1874,
+        "mode": null,
+        "flat": 4900.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Granby, QC",
+        "destination": "Wagram, NC",
+        "miles": 979,
+        "mode": null,
+        "flat": 2095.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Granby, QC",
+        "destination": "Tampa, FL",
+        "miles": 1528,
+        "mode": null,
+        "flat": 4600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Granby, QC",
+        "destination": "Hialeah, FL",
+        "miles": 1688,
+        "mode": null,
+        "flat": 4800.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Berthierville, QC",
+        "destination": "Federalsburg, MD",
+        "miles": 611,
+        "mode": null,
+        "flat": 2900.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Etobicoke, ON",
+        "destination": "Winnipeg, MB",
+        "miles": 1279,
+        "mode": null,
+        "flat": 8680.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Etobicoke, ON",
+        "destination": "Dieppe, NB",
+        "miles": 956,
+        "mode": null,
+        "flat": 3200.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Vaughan, ON",
+        "destination": "Medina, NY",
+        "miles": 127,
+        "mode": null,
+        "flat": 1600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Mississauga, ON",
+        "destination": "Linfield, PA",
+        "miles": 420,
+        "mode": null,
+        "flat": 2100.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Mississauga, ON",
+        "destination": "Newark, NJ",
+        "miles": 450,
+        "mode": null,
+        "flat": 2400.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Mississauga, ON",
+        "destination": "Dartmouth, NS",
+        "miles": 1120,
+        "mode": null,
+        "flat": 3500.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Jersey City, NJ",
+        "destination": "Mississauga, ON",
+        "miles": 457,
+        "mode": null,
+        "flat": 2200.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "South Hackensack, NJ",
+        "destination": "Kingsey falls, QC",
+        "miles": 445,
+        "mode": null,
+        "flat": 2100.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Westbury, NY",
+        "destination": "Kingsey falls, QC",
+        "miles": 448,
+        "mode": null,
+        "flat": 2800.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Ronkonkoma, NY",
+        "destination": "Candiac, QC",
+        "miles": 405,
+        "mode": null,
+        "flat": 2700.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "West Babylon, NY",
+        "destination": "Candiac, QC",
+        "miles": 396,
+        "mode": null,
+        "flat": 2600.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Hopkinton, MA",
+        "destination": "Kingsey falls, QC",
+        "miles": 317,
+        "mode": null,
+        "flat": 2500.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Fredericton, NB",
+        "destination": "Candiac, QC",
+        "miles": 509,
+        "mode": null,
+        "flat": 2100.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Pittsburgh, PA",
+        "destination": "Mississauga, ON",
+        "miles": 305,
+        "mode": null,
+        "flat": 3000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Brossard, QC",
+        "destination": "Trenton, ON",
+        "miles": 241,
+        "mode": null,
+        "flat": 1000.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Alliston, ON",
+        "miles": 357,
+        "mode": null,
+        "flat": 1150.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Valleyfield, QC",
+        "destination": "Mississauga, ON",
+        "miles": 324,
+        "mode": null,
+        "flat": 900.0,
+        "fund_type": "CAD"
+      }
+    ],
+    "notes": "Fuel Surcharge extra(52.06% as of 2022/05/04)"
+  },
+  {
+    "source_file": "2024-03-18 Zinc International.pdf",
+    "date": "2024-03-18",
+    "customer": "Zinc International SA",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Laredo, TX",
+        "miles": null,
+        "mode": null,
+        "flat": 667.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Pasadena, TX",
+        "miles": 369,
+        "mode": null,
+        "flat": 1995.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Charlotte, NC",
+        "miles": 1394,
+        "mode": null,
+        "flat": 3285.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Waukegan, IL",
+        "miles": 1393,
+        "mode": null,
+        "flat": 3160.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Tallapoosa, GA",
+        "miles": 1116,
+        "mode": null,
+        "flat": 2900.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Dickson, TN",
+        "miles": 1061,
+        "mode": null,
+        "flat": 2770.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Brampton, ON",
+        "miles": 1833,
+        "mode": null,
+        "flat": 4100.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Freeport, TX",
+        "miles": 407,
+        "mode": null,
+        "flat": 2075.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Sumter, SC",
+        "miles": 1397,
+        "mode": null,
+        "flat": 3235.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Akron, OH",
+        "miles": 1603,
+        "mode": null,
+        "flat": 3855.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Houston, TX",
+        "miles": 352,
+        "mode": null,
+        "flat": 1940.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Deer Park, TX",
+        "miles": 374,
+        "mode": null,
+        "flat": 1975.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Painesville, OH",
+        "miles": 1646,
+        "mode": null,
+        "flat": 3940.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Graniteville, SC",
+        "miles": 1301,
+        "mode": null,
+        "flat": 2995.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Bremen, GA",
+        "miles": 1120,
+        "mode": null,
+        "flat": 2905.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Fayetteville, NC",
+        "miles": 1513,
+        "mode": null,
+        "flat": 3365.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Danville, VA",
+        "miles": 1525,
+        "mode": null,
+        "flat": 3470.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Dallas, TX",
+        "miles": 434,
+        "mode": null,
+        "flat": 1875.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Kingston, ON",
+        "miles": 2002,
+        "mode": null,
+        "flat": 4635.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "San Nicolas de Los Garza, NL",
+        "destination": "Bolton, ON",
+        "miles": 1849,
+        "mode": null,
+        "flat": 4090.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Fuel surcharge excluded($ 0.51/mi as of 2024-03-04) Fuel surcharge is calculated on the US portion only (Laredo to destination) Border crossing included TE Bondextra ($ 135 per load if need)"
+  },
+  {
+    "source_file": "2025-04-17 Associated Material Burlington ON-MO_ IL.pdf",
+    "date": "2025-04-17",
+    "customer": "Associated Materials",
+    "equipment": "Dry van",
+    "service_type": ":",
+    "lanes": [
+      {
+        "origin": "Burlington, ON",
+        "destination": "Springfield, MO",
+        "miles": 9,
+        "mode": "DV",
+        "flat": 2200.0,
+        "fund_type": "CAD"
+      },
+      {
+        "origin": "Burlington, ON",
+        "destination": "Rolling Meadows, IL",
+        "miles": 5,
+        "mode": "FB",
+        "flat": 1630.0,
+        "fund_type": "CAD"
+      }
+    ],
+    "notes": "Fuel Surcharge extra. Currently $0.46/mile."
+  },
+  {
+    "source_file": "2025-05-20 Goodyear.pdf",
+    "date": "2025-05-20",
+    "customer": "Goodyear",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Danville, VA",
+        "destination": "Fayetteville, NC",
+        "miles": null,
+        "mode": null,
+        "flat": 575.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "fuel excluded (Fuel based on GoodyearBreakthrough program.)"
+  },
+  {
+    "source_file": "2025-05-29 Rate Proposal-GJ to Greer SC-BMW.pdf",
+    "date": "2025-05-29",
+    "customer": "BMW c/o Protrans",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Cortazar, GJ",
+        "destination": "Greer, SC",
+        "miles": 1299,
+        "mode": null,
+        "flat": 4490.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Silao de la Victoria, GJ",
+        "destination": "Greer, SC",
+        "miles": 1299,
+        "mode": null,
+        "flat": 4490.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Celaya, GJ",
+        "destination": "Greer, SC",
+        "miles": 1299,
+        "mode": null,
+        "flat": 4490.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Fuel excluded (Fuel based on Protrans FSCSchedule) Border crossing included in rate"
+  },
+  {
+    "source_file": "2025-07-03 Atlantic Transcontinental.pdf",
+    "date": "2025-07-03",
+    "customer": "Atlantic Transcontinental",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "St Albert, AB",
+        "destination": "Fairdale, KY",
+        "miles": 2020,
+        "mode": null,
+        "flat": 4400.0,
+        "fund_type": "CAD"
+      }
+    ],
+    "notes": "Fuel Surcharge included Live load, live unload"
+  },
+  {
+    "source_file": "2025-10-03 Rate Proposal-Laredo Outbound.pdf",
+    "date": "2025-10-03",
+    "customer": "Monro",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Laredo, TX",
+        "destination": "Cleveland, OH",
+        "miles": 1641,
+        "mode": null,
+        "flat": 3940.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Laredo, TX",
+        "destination": "Waynesboro, PA",
+        "miles": 1727,
+        "mode": null,
+        "flat": 3910.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Laredo, TX",
+        "destination": "Chesterfield, MO",
+        "miles": 1037,
+        "mode": null,
+        "flat": 2875.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Laredo, TX",
+        "destination": "Urbana, OH",
+        "miles": 1453,
+        "mode": null,
+        "flat": 3605.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Laredo, TX",
+        "destination": "Watertown, CT",
+        "miles": 2045,
+        "mode": null,
+        "flat": 4890.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Laredo, TX",
+        "destination": "Hanover Crossings, PA",
+        "miles": 1883,
+        "mode": null,
+        "flat": 4580.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Laredo, TX",
+        "destination": "New Berlin, WI",
+        "miles": 1422,
+        "mode": null,
+        "flat": 3650.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Laredo, TX",
+        "destination": "St Louis, MO",
+        "miles": 1057,
+        "mode": null,
+        "flat": 2925.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Laredo, TX",
+        "destination": "St Clair, MO",
+        "miles": 1004,
+        "mode": null,
+        "flat": 2820.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Rate includes fuel"
+  },
+  {
+    "source_file": "2025-12-03 Laredo Inboud.pdf",
+    "date": "2025-12-03",
+    "customer": "TIMSA",
+    "equipment": "Dry van",
+    "service_type": null,
+    "lanes": [
+      {
+        "origin": "Duncan, SC",
+        "destination": "Laredo, TX",
+        "miles": 1311,
+        "mode": null,
+        "flat": 2265.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Macon, GA",
+        "destination": "Laredo, TX",
+        "miles": 1171,
+        "mode": null,
+        "flat": 2150.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Morganton, NC",
+        "destination": "Laredo, TX",
+        "miles": 1398,
+        "mode": null,
+        "flat": 2475.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Simpsonville, SC",
+        "destination": "Laredo, TX",
+        "miles": 1304,
+        "mode": null,
+        "flat": 2250.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Spartanburg, SC",
+        "destination": "Laredo, TX",
+        "miles": 1324,
+        "mode": null,
+        "flat": 2285.0,
+        "fund_type": "USD"
+      },
+      {
+        "origin": "Ubly, MI",
+        "destination": "Laredo, TX",
+        "miles": 1727,
+        "mode": null,
+        "flat": 2950.0,
+        "fund_type": "USD"
+      }
+    ],
+    "notes": "Fuel surcharge included. Live load, drop for unload in Ramos Arizpe, Torreon."
+  }
+]

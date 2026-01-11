@@ -179,6 +179,7 @@ Les dépendances sont installées automatiquement si manquantes.
 - Documents en français
 - Date manquante dans le contenu (fallback sur filename)
 - 4 types de services différents
+- **Chemins longs Windows** (> 260 caractères) - via préfixe `\\?\`
 
 ### Non gérés
 - PDFs scannés (images) - nécessiterait OCR
@@ -205,3 +206,5 @@ Après exécution, vérifier:
 - **v8**: Extraction location pour Shunting
 - **v9**: Correction décimales RPM (`2 .70` → `2.70`)
 - **v10**: Tracking des types inconnus (rate_confirmations_unknown.json toujours créé)
+- **v11**: Support chemins longs Windows (> 260 chars) via `get_extended_path()` avec préfixe `\\?\`
+- **v11.1**: Fix: Appliquer `get_extended_path()` AVANT la vérification `exists()` pour traiter les fichiers avec chemins longs

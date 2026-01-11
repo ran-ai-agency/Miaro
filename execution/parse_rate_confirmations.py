@@ -29,6 +29,22 @@ except ImportError:
 # UTILITY FUNCTIONS
 # =============================================================================
 
+def get_extended_path(path: str) -> str:
+    """
+    Convert path to Windows extended-length path format.
+
+    This allows accessing paths longer than 260 characters (MAX_PATH limit).
+    The \\?\ prefix tells Windows to pass the path directly to the file system.
+
+    Essential for OneDrive/SharePoint paths which can be very long.
+    """
+    abs_path = os.path.abspath(path)
+    # Only add prefix if not already present and on Windows
+    if os.name == 'nt' and not abs_path.startswith('\\\\?\\'):
+        return '\\\\?\\' + abs_path
+    return abs_path
+
+
 def extract_customer_from_path(pdf_path: str) -> str | None:
     """
     Extract customer name from the file path.
@@ -892,7 +908,10 @@ def parse_slh_lanes_from_table(pdf_path: str) -> list[dict]:
     """
     lanes = []
 
-    with pdfplumber.open(pdf_path) as pdf:
+    # Use extended path for Windows long path support
+    extended_path = get_extended_path(pdf_path)
+
+    with pdfplumber.open(extended_path) as pdf:
         for page in pdf.pages:
             tables = page.extract_tables()
 
@@ -1479,8 +1498,11 @@ def parse_slh_pdf(pdf_path: str) -> dict:
     """
     source_file = os.path.basename(pdf_path)
 
+    # Use extended path for Windows long path support
+    extended_path = get_extended_path(pdf_path)
+
     all_text = ""
-    with pdfplumber.open(pdf_path) as pdf:
+    with pdfplumber.open(extended_path) as pdf:
         for page in pdf.pages:
             page_text = page.extract_text() or ""
             all_text += page_text + "\n"
@@ -1545,9 +1567,12 @@ def parse_pdf(pdf_path: str) -> tuple[dict, bool, str]:
         "raw_text_preview": ""  # For debugging unknown types
     }
 
+    # Use extended path for Windows long path support
+    extended_path = get_extended_path(pdf_path)
+
     all_text = ""
 
-    with pdfplumber.open(pdf_path) as pdf:
+    with pdfplumber.open(extended_path) as pdf:
         for page in pdf.pages:
             page_text = page.extract_text() or ""
             all_text += page_text + "\n"
@@ -1667,8 +1692,13 @@ def main(pdf_dir_override: str = None, output_dir_override: str = None):
     for pdf_path in sorted(pdf_files):
         print(f"Processing: {pdf_path.name}")
         try:
+            # Use extended path for Windows long path support (> 260 chars)
+            # Must be applied BEFORE exists() check, otherwise long paths fail
+            pdf_path_str = get_extended_path(str(pdf_path))
+
             # Check if file actually exists (OneDrive cloud-only files may show in rglob but not be accessible)
-            if not pdf_path.exists():
+            # Use os.path.exists with extended path for long path support
+            if not os.path.exists(pdf_path_str):
                 print(f"  - SKIPPED: File not found (may be cloud-only in OneDrive)")
                 processing_summary.append({
                     "Company": "Unknown",
@@ -1679,9 +1709,6 @@ def main(pdf_dir_override: str = None, output_dir_override: str = None):
                     "Error": "File not found (cloud-only)"
                 })
                 continue
-
-            # Normalize path string for pdfplumber (fix any remaining double backslashes)
-            pdf_path_str = os.path.normpath(str(pdf_path))
 
             # First, detect company by reading first page
             with pdfplumber.open(pdf_path_str) as pdf:

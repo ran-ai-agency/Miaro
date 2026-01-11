@@ -1598,7 +1598,7 @@ def main():
     """Main function to parse all PDF files and output JSON by type."""
     script_dir = Path(__file__).parent.parent
 
-    # PDF source directory (OneDrive)
+    # PDF source directory (OneDrive - scans all subfolders recursively)
     pdf_dir = Path(r"C:\Users\ranai\OneDrive\Documents\Miaro")
 
     # Output directory (project root)

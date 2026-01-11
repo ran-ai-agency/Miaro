@@ -201,8 +201,31 @@ def convert_accessorial_to_excel(json_path: str, excel_path: str):
     return df
 
 
-def main():
-    script_dir = Path(__file__).parent.parent
+def main(input_dir_override: str = None, output_dir_override: str = None):
+    """
+    Main function to convert JSON files to Excel.
+
+    Args:
+        input_dir_override: Optional path to input directory containing JSON files (for Jupyter/Colab)
+        output_dir_override: Optional path to output directory for Excel files (for Jupyter/Colab)
+    """
+    # Handle Jupyter/Colab environment where __file__ is not defined
+    try:
+        script_dir = Path(__file__).parent.parent
+    except NameError:
+        # Running in Jupyter/Colab - use current directory or override
+        script_dir = Path.cwd()
+
+    # Use overrides if provided
+    if input_dir_override:
+        input_dir = Path(input_dir_override)
+    else:
+        input_dir = script_dir
+
+    if output_dir_override:
+        output_dir = Path(output_dir_override)
+    else:
+        output_dir = script_dir
 
     # Define file mappings
     conversions = [
@@ -217,8 +240,8 @@ def main():
     print("=" * 60)
 
     for json_file, excel_file, doc_type, converter in conversions:
-        json_path = script_dir / json_file
-        excel_path = script_dir / excel_file
+        json_path = input_dir / json_file
+        excel_path = output_dir / excel_file
 
         if not json_path.exists():
             print(f"\n{doc_type}: No JSON file found ({json_file})")

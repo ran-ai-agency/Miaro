@@ -33,8 +33,8 @@ def extract_customer_from_path(pdf_path: str) -> str | None:
     """
     Extract customer name from the file path.
 
-    The folder structure is:
-    C:/Users/.../Miaro/03. Bids Archive/[CUSTOMER]/[filename].pdf
+    Production folder structure:
+    C:/Users/mranaivoarison/C.A.T. Inc/C.A.T. Files Server - Customer_Files/Customers/[CUSTOMER]/[filename].pdf
 
     The customer is the parent folder of the PDF file.
     Returns None if the path doesn't match expected structure.
@@ -45,19 +45,20 @@ def extract_customer_from_path(pdf_path: str) -> str | None:
     parent_folder = path.parent.name
 
     # Skip if parent is the root PDF folder (not in a customer subfolder)
-    # Check if we're in the "03. Bids Archive" structure
+    # Check if we're in the "Customers" structure
     grandparent = path.parent.parent.name if path.parent.parent else None
 
     # If parent folder looks like a customer name (not a system folder)
-    # and grandparent contains "Bids" or "Archive", use parent as customer
+    # and grandparent contains "Customers" or other expected folders, use parent as customer
     if parent_folder and grandparent:
-        if 'Bids' in grandparent or 'Archive' in grandparent or 'Miaro' in grandparent:
+        if 'Customers' in grandparent or 'Bids' in grandparent or 'Archive' in grandparent:
             return parent_folder
 
     # Fallback: if parent folder is not a date pattern or system folder, use it
     if parent_folder and not re.match(r'^\d{4}-\d{2}-\d{2}', parent_folder):
         # Skip common system folders
-        skip_folders = {'Documents', 'OneDrive', 'Users', 'Miaro', '03. Bids Archive'}
+        skip_folders = {'Documents', 'OneDrive', 'Users', 'C.A.T. Inc',
+                        'C.A.T. Files Server - Customer_Files', 'Customers', 'Customer_Files'}
         if parent_folder not in skip_folders:
             return parent_folder
 
@@ -1594,18 +1595,45 @@ def parse_pdf(pdf_path: str) -> tuple[dict, bool, str]:
     return result, is_confident, all_text
 
 
-def main():
-    """Main function to parse all PDF files and output JSON by type."""
-    script_dir = Path(__file__).parent.parent
+def main(pdf_dir_override: str = None, output_dir_override: str = None):
+    """
+    Main function to parse all PDF files and output JSON by type.
 
-    # PDF source directory (OneDrive - scans all subfolders recursively)
-    pdf_dir = Path(r"C:\Users\ranai\OneDrive\Documents\Miaro")
+    Args:
+        pdf_dir_override: Optional path to PDF source directory (for Jupyter/Colab)
+        output_dir_override: Optional path to output directory (for Jupyter/Colab)
+    """
+    # Handle Jupyter/Colab environment where __file__ is not defined
+    try:
+        script_dir = Path(__file__).parent.parent
+    except NameError:
+        # Running in Jupyter/Colab - use current directory or override
+        script_dir = Path.cwd()
+
+    # PDF source directory (Production: C.A.T. Files Server - Customer_Files/Customers)
+    if pdf_dir_override:
+        pdf_dir = Path(pdf_dir_override)
+    else:
+        pdf_dir = Path(r"C:\Users\mranaivoarison\C.A.T. Inc\C.A.T. Files Server - Customer_Files\Customers")
 
     # Output directory (project root)
-    output_dir = script_dir
+    if output_dir_override:
+        output_dir = Path(output_dir_override)
+    else:
+        output_dir = script_dir
 
     # Recursively find all PDF files (including in subfolders like "03. Bids Archive/[Customer]/")
     all_pdf_files = list(pdf_dir.rglob("*.pdf"))
+
+    # Normalize paths to fix double backslashes (common issue with OneDrive/SharePoint)
+    def normalize_path(p: Path) -> Path:
+        """Normalize path to fix double backslashes and other path issues."""
+        # Use os.path.normpath for robust path normalization
+        path_str = os.path.normpath(str(p))
+        return Path(path_str)
+
+    # Normalize all found paths
+    all_pdf_files = [normalize_path(f) for f in all_pdf_files]
 
     # Filter only PDFs whose filename starts with a date (YYYY-MM-DD)
     date_pattern = re.compile(r'^\d{4}-\d{2}-\d{2}')
@@ -1639,26 +1667,42 @@ def main():
     for pdf_path in sorted(pdf_files):
         print(f"Processing: {pdf_path.name}")
         try:
+            # Check if file actually exists (OneDrive cloud-only files may show in rglob but not be accessible)
+            if not pdf_path.exists():
+                print(f"  - SKIPPED: File not found (may be cloud-only in OneDrive)")
+                processing_summary.append({
+                    "Company": "Unknown",
+                    "Type de Service": "SKIPPED",
+                    "Extracted Lanes": 0,
+                    "File Name": pdf_path.name,
+                    "Full Path": str(pdf_path),
+                    "Error": "File not found (cloud-only)"
+                })
+                continue
+
+            # Normalize path string for pdfplumber (fix any remaining double backslashes)
+            pdf_path_str = os.path.normpath(str(pdf_path))
+
             # First, detect company by reading first page
-            with pdfplumber.open(str(pdf_path)) as pdf:
+            with pdfplumber.open(pdf_path_str) as pdf:
                 first_page_text = pdf.pages[0].extract_text() or ""
 
             company_name = extract_company_name(first_page_text)
 
             # Extract customer from folder path (parent folder of the PDF)
-            customer_from_path = extract_customer_from_path(str(pdf_path))
+            customer_from_path = extract_customer_from_path(pdf_path_str)
 
             # Route to appropriate parser based on company
             if company_name == "SLH":
                 # Use SLH parser
-                result = parse_slh_pdf(str(pdf_path))
+                result = parse_slh_pdf(pdf_path_str)
 
                 # Override customer with folder name if available
                 if customer_from_path:
                     result['customer'] = customer_from_path
 
                 # Store full path for reference
-                result['full_path'] = str(pdf_path)
+                result['full_path'] = pdf_path_str
 
                 slh_results.append(result)
 
@@ -1672,12 +1716,12 @@ def main():
                     "Type de Service": "SLH",
                     "Extracted Lanes": extracted_count,
                     "File Name": pdf_path.name,
-                    "Full Path": str(pdf_path)
+                    "Full Path": pdf_path_str
                 })
 
             else:
                 # Use C.A.T. parser
-                result, is_confident, all_text = parse_pdf(str(pdf_path))
+                result, is_confident, all_text = parse_pdf(pdf_path_str)
                 doc_type = result['doc_type']
 
                 # Override customer with folder name if available
@@ -1685,7 +1729,7 @@ def main():
                     result['customer'] = customer_from_path
 
                 # Store full path for reference
-                result['full_path'] = str(pdf_path)
+                result['full_path'] = pdf_path_str
 
                 results_by_type[doc_type].append(result)
 
@@ -1721,8 +1765,20 @@ def main():
                     "Type de Service": doc_type,
                     "Extracted Lanes": extracted_count,
                     "File Name": pdf_path.name,
-                    "Full Path": str(pdf_path)
+                    "Full Path": pdf_path_str
                 })
+
+        except FileNotFoundError as e:
+            print(f"  - SKIPPED: File not accessible (OneDrive cloud-only or moved)")
+            processing_summary.append({
+                "Company": "Unknown",
+                "Type de Service": "SKIPPED",
+                "Extracted Lanes": 0,
+                "File Name": pdf_path.name,
+                "Full Path": os.path.normpath(str(pdf_path)),
+                "Error": "FileNotFoundError - cloud-only or moved"
+            })
+            continue
 
         except Exception as e:
             print(f"  - ERROR: {e}")
@@ -1735,7 +1791,8 @@ def main():
                 "Type de Service": "ERROR",
                 "Extracted Lanes": 0,
                 "File Name": pdf_path.name,
-                "Full Path": str(pdf_path)
+                "Full Path": os.path.normpath(str(pdf_path)),
+                "Error": str(e)
             })
 
     # Output separate JSON files

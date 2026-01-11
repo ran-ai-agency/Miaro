@@ -16,7 +16,7 @@ Les documents "Rate Confirmation" sont soumis par l'équipe de tarification C.A.
 Un fichier `rate_confirmations_unknown.json` est toujours généré pour tracker les types non reconnus (vide si aucun).
 
 ## Inputs
-- Fichiers PDF dans le répertoire racine du projet (`*.pdf`)
+- Fichiers PDF dans le dossier OneDrive: `C:\Users\ranai\OneDrive\Documents\Miaro\*.pdf`
 - Format attendu: Documents C.A.T. Inc. Rate Confirmation (anglais ou français)
 
 ## Scripts d'exécution
@@ -145,7 +145,8 @@ La location est extraite de:
 ## Workflow complet
 
 ```bash
-# 1. Placer les PDFs dans le répertoire racine
+# 1. Placer les PDFs dans le dossier OneDrive:
+#    C:\Users\ranai\OneDrive\Documents\Miaro\
 
 # 2. Parser tous les PDFs (génère 5 fichiers JSON)
 python execution/parse_rate_confirmations.py

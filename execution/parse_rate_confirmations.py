@@ -29,6 +29,41 @@ except ImportError:
 # UTILITY FUNCTIONS
 # =============================================================================
 
+def extract_customer_from_path(pdf_path: str) -> str | None:
+    """
+    Extract customer name from the file path.
+
+    The folder structure is:
+    C:/Users/.../Miaro/03. Bids Archive/[CUSTOMER]/[filename].pdf
+
+    The customer is the parent folder of the PDF file.
+    Returns None if the path doesn't match expected structure.
+    """
+    path = Path(pdf_path)
+
+    # The customer folder is the parent of the PDF file
+    parent_folder = path.parent.name
+
+    # Skip if parent is the root PDF folder (not in a customer subfolder)
+    # Check if we're in the "03. Bids Archive" structure
+    grandparent = path.parent.parent.name if path.parent.parent else None
+
+    # If parent folder looks like a customer name (not a system folder)
+    # and grandparent contains "Bids" or "Archive", use parent as customer
+    if parent_folder and grandparent:
+        if 'Bids' in grandparent or 'Archive' in grandparent or 'Miaro' in grandparent:
+            return parent_folder
+
+    # Fallback: if parent folder is not a date pattern or system folder, use it
+    if parent_folder and not re.match(r'^\d{4}-\d{2}-\d{2}', parent_folder):
+        # Skip common system folders
+        skip_folders = {'Documents', 'OneDrive', 'Users', 'Miaro', '03. Bids Archive'}
+        if parent_folder not in skip_folders:
+            return parent_folder
+
+    return None
+
+
 def parse_date(date_str: str) -> str:
     """Parse date string to ISO format."""
     date_str = date_str.strip()
@@ -1569,7 +1604,8 @@ def main():
     # Output directory (project root)
     output_dir = script_dir
 
-    all_pdf_files = list(pdf_dir.glob("*.pdf"))
+    # Recursively find all PDF files (including in subfolders like "03. Bids Archive/[Customer]/")
+    all_pdf_files = list(pdf_dir.rglob("*.pdf"))
 
     # Filter only PDFs whose filename starts with a date (YYYY-MM-DD)
     date_pattern = re.compile(r'^\d{4}-\d{2}-\d{2}')
@@ -1609,10 +1645,21 @@ def main():
 
             company_name = extract_company_name(first_page_text)
 
+            # Extract customer from folder path (parent folder of the PDF)
+            customer_from_path = extract_customer_from_path(str(pdf_path))
+
             # Route to appropriate parser based on company
             if company_name == "SLH":
                 # Use SLH parser
                 result = parse_slh_pdf(str(pdf_path))
+
+                # Override customer with folder name if available
+                if customer_from_path:
+                    result['customer'] = customer_from_path
+
+                # Store full path for reference
+                result['full_path'] = str(pdf_path)
+
                 slh_results.append(result)
 
                 extracted_count = len(result.get('lanes', []))
@@ -1632,6 +1679,14 @@ def main():
                 # Use C.A.T. parser
                 result, is_confident, all_text = parse_pdf(str(pdf_path))
                 doc_type = result['doc_type']
+
+                # Override customer with folder name if available
+                if customer_from_path:
+                    result['customer'] = customer_from_path
+
+                # Store full path for reference
+                result['full_path'] = str(pdf_path)
+
                 results_by_type[doc_type].append(result)
 
                 # Flag if type detection was not confident
